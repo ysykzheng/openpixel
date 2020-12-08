@@ -1,4 +1,4 @@
-// Open Pixel v1.2.0 | Published By Dockwa | Created By Stuart Yamartino | MIT License
+// WoBiNiQiang Pixel v1.0.0 | Published By wobiniqiang.com | Created By Stuart Yamartino | MIT License
 ;(function(window, document, pixelFunc, pixelFuncName, pixelEndpoint, versionNumber) {
 "use strict";
 
@@ -439,16 +439,16 @@ window.onload = function () {
     }.bind(aTags[i]));
   }
 
-  var dataAttributes = document.querySelectorAll('[data-opix-event]');
+  var dataAttributes = document.querySelectorAll('[data-wbnq-event]');
 
   for (var i = 0, l = dataAttributes.length; i < l; i++) {
     dataAttributes[i].addEventListener('click', function (_e) {
-      var event = this.getAttribute('data-opix-event');
+      var event = this.getAttribute('data-wbnq-event');
 
       if (event) {
-        new Pixel(event, Helper.now(), this.getAttribute('data-opix-data'));
+        new Pixel(event, Helper.now(), this.getAttribute('data-wbnq-data'));
       }
     }.bind(dataAttributes[i]));
   }
 };
-}(window, document, window["opix"], "opix", "/pixel.gif", 1));
+}(window, document, window["wbnq"], "wbnq", "/image/1.gif", 1));
